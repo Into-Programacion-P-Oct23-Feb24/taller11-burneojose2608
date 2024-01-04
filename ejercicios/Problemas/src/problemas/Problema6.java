@@ -10,5 +10,19 @@ package problemas;
  * @author reroes
  */
 public class Problema6 {
-    
+
+    public static void main(String[] args) {
+
+        int[] informacion = {1, 2, 3, 10, 20, 30, 100, 200, 300};
+        int suma = obtenerSumaDatos(informacion);
+        System.out.printf("La suma es %d\n", suma);
+    }
+
+    public static int obtenerSumaDatos(int[] d) {
+        int suma = 0;
+        for (int i = 0; i < d.length; i++) {
+            suma = suma + d[i];
+        }
+        return suma;
+    }
 }
