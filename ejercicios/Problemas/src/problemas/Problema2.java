@@ -23,13 +23,13 @@ public class Problema2 {
         System.out.println("ingrese del 1 a 3");
         n = entrada.nextInt();
         if (n == 1){
-            obtnercuadrado();
+            obtenercuadro();
         }else
             if(n ==2 ){
-                obtnertriangulo();
+                obtenertriangulo();
             }else
                 if( n == 3){
-                    obtenerrectangulo();
+                    Obtenerrectangulo();
                 }
     }
     public static void obtenercuadro() {
@@ -44,7 +44,22 @@ public class Problema2 {
          Scanner entrada = new Scanner(System.in);
         double base;
         double altura;
+        double area;
         System.out.println("Ingrese la base");
         base = entrada.nextDouble();
+        System.out.println("Ingrese la altura");
+        altura = entrada.nextDouble();
+        area = (base*altura)/2;
+    }
+    public static void  Obtenerrectangulo() {
+         Scanner entrada = new Scanner(System.in);
+         double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese la base");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese la altura");
+        altura = entrada.nextDouble();
+        area = base * altura;
     }
 }
