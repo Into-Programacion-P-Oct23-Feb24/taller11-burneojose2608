@@ -39,6 +39,7 @@ public class Problema2 {
         System.out.println("ingrese un lado");
         lado = entrada.nextDouble();
         area = lado*lado*lado;
+        System.out.printf("el area es %s\n",area);
     }
     public static void  obtenertriangulo() {
          Scanner entrada = new Scanner(System.in);
@@ -50,6 +51,7 @@ public class Problema2 {
         System.out.println("Ingrese la altura");
         altura = entrada.nextDouble();
         area = (base*altura)/2;
+        System.out.printf("el area es %s\n",area);
     }
     public static void  Obtenerrectangulo() {
          Scanner entrada = new Scanner(System.in);
@@ -61,5 +63,6 @@ public class Problema2 {
         System.out.println("Ingrese la altura");
         altura = entrada.nextDouble();
         area = base * altura;
+        System.out.printf("el area es %s\n",area);
     }
 }
